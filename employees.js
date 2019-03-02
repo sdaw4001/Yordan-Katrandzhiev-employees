@@ -112,7 +112,7 @@ function divideEmpByProjId() {                  // Divide the employees by Proje
     return empArray;
 }
 
-function filterEmpByPeriod() {    // Filters all employees that have period both
+function filterEmpById() {    // Filters all employees that have period both
     let filtredArray = [];        // Returns  object of objects 
     let dividedArray = divideEmpByProjId();
 
@@ -184,7 +184,7 @@ function filterEmpByPeriod() {    // Filters all employees that have period both
 }
 
 function getPairOfLongestWorkingEmps() {         // Comperes the highest Working period of all emp
-    let arrayToCompare = filterEmpByPeriod();   // Return objectof 2 emp
+    let arrayToCompare = filterEmpById();        // Return objectof 2 emp
     let res = {};
 
     for (let i = 0; i < arrayToCompare.length; i++) {
